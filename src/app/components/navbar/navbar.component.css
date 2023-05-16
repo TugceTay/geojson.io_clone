@@ -1,0 +1,13 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #0E2127;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    height: 3rem;
+    width: 100%;
+  }
+  

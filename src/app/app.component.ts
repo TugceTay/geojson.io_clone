@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { GeojsonviewerComponent } from './components/geojsonviewer/geojsonviewer.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'geojson.io-clone';
+  
+  @ViewChild('geojsonviewer') geojsonviewer!: GeojsonviewerComponent;
+
+  updateGeoJSONData(geoJSONData: any): void {
+    this.geojsonviewer.geojsonData = geoJSONData;
+  }
 }

@@ -1,0 +1,10 @@
+<form (ngSubmit)="save()">
+  <input type="text" [(ngModel)]="properties.key" name="key" required>
+  <input type="text" [(ngModel)]="properties.value" name="value" required>
+
+  <div class="popup-container">
+    <button class="custom-button save" (click)="save()">Save</button>
+    <button class="custom-button cancel" (click)="cancel()">Cancel</button>
+    <button class="custom-button delete" (click)="delete()">Delete</button>
+  </div>
+</form>

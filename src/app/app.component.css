@@ -1,0 +1,9 @@
+
+#content {
+    display: flex;
+    height: calc(100vh - 3rem); 
+    width: 100%;
+    position: relative;
+    top: 3rem; 
+}
+
